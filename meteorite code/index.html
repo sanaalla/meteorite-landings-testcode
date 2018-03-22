@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Meteor landings</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      
+      
+      <!--This is where you copy and paste the API code from the setup section in Mapbox! (but you can also copy and paste this part)-->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+      <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+
+  </head>
+  <body>
+      
+    <div id='map' style='width:100%; height:800px;'></div>
+    
+      <!--This is where you put in your ACCESS TOKEN and then put in your mapbox STYLE, which you can find in the style editor in your Mapbox studio!-->
+      <script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic2FuYWFsbGEiLCJhIjoibEtoeFIxayJ9.43sWyAt_JtTb_kutj_byJg';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/sanaalla/cjf2rxmri5a3m2tq8p8fj3f0t'
+      });
+    </script>
+
+  </body>
+</html>
